@@ -13,10 +13,17 @@ jobs:
       - python/save-cache
       - run:
           command: pip install selenium webdriver-manager pytest
+          name: Install dependencies
+      
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+      - run:
           command: pytest tests
           name: Test
 
-workflows:
-  main:
-    jobs:
-      - build-and-test
