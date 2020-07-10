@@ -1,7 +1,7 @@
 from shadowselenium import __version__
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from .import ShadowElement
+from . import ShadowElement
 import pytest
 import logging
 
@@ -41,6 +41,7 @@ class TestShadowDOM(BaseTest):
         try:
             sdom = ShadowElement(self.driver)
             elemz = self.driver.find_element_by_tag_name("shadow-hostnav")
+            self.driver.find_element_by_css_selector("div.alert span").click()
             sdom.find_element_under_shadow_root_by_css(elemz, ".nav-link").click()
             self.driver.find_element_by_css_selector("div.alert span").click()
         except Exception as e:
