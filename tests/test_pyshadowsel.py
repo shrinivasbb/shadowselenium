@@ -1,7 +1,7 @@
 from shadowselenium import __version__
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from . import ShadowElement
+from shadowselenium import ShadowElement
 import pytest
 import logging
 
