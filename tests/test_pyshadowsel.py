@@ -41,6 +41,7 @@ class TestShadowDOM(BaseTest):
         try:
             sdom = ShadowElement(self.driver)
             elemz = self.driver.find_element_by_tag_name("shadow-hostnav")
+            self.driver.find_element_by_css_selector("div.alert span").click()
             sdom.find_element_under_shadow_root_by_css(elemz, ".nav-link").click()
             self.driver.find_element_by_css_selector("div.alert span").click()
         except Exception as e:
