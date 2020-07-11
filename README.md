@@ -1,4 +1,4 @@
-[![Build Status](https://semaphoreci.com/api/v1/shrinivasb/shadowselenium/branches/circleci-project-setup/badge.svg)](https://semaphoreci.com/shrinivasb/shadowselenium)
+## [![Build Status](https://semaphoreci.com/api/v1/shrinivasb/shadowselenium/branches/circleci-project-setup/badge.svg)](https://semaphoreci.com/shrinivasb/shadowselenium)
 
 # shadowselenium
 
