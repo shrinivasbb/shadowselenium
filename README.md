@@ -2,6 +2,8 @@
 
 # shadowselenium
 
+[![Downloads](https://static.pepy.tech/badge/shadowselenium)](https://pepy.tech/project/shadowselenium)
+
 #### This package can be used along with selenium to identify Shadow DOM elements using CSS selectors 
 
 This project is published on PIPY.org.
